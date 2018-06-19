@@ -11,7 +11,7 @@
 ### Teoría
 
 ### Código
-    ```javascript
+```javascript
     // Clase cola
 class Cola
 {
@@ -73,7 +73,8 @@ console.log(cola.eliminar());
 //comprobamos que la cola este vacia
 console.log(cola.estavacio());
  
-//Añadimos elementos a la Cola 
+//Añadimos elementos a la Cola
+//
 cola.añadir(10);
 cola.añadir(20);
 cola.añadir(30);
@@ -99,7 +100,7 @@ console.log(queue.eliminar());
 //  [30, 40, 50]
 console.log(queue.imprimirCola());
    
-   ```
+```
 
 ## Lista ligada
 
