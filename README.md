@@ -54,7 +54,7 @@ estavacio()
     return this.items.length == 0;
 }
 // ImprimirCola funcion
-imprimirCola()
+recorrerCola()
 {
     var str = "";
     //recorremos la lista y mostramos los valores
@@ -83,22 +83,22 @@ cola.añadir(50);
 
  
 // muestra 10
-console.log(queue.frente());
+console.log(cola.frente());
  
 // elimina el diez
 // la cola ahora contiene [20, 30, 40, 50]
-console.log(queue.eliminar());
+console.log(cola.eliminar());
  
 // muestra 20
-console.log(queue.frente());
+console.log(cola.frente());
  
 // elimina 20
 // la cola ahora contiene [30, 40, 50]
-console.log(queue.eliminar());
+console.log(cola.eliminar());
  
 // imprime los elementos de la cola
 //  [30, 40, 50]
-console.log(queue.imprimirCola());
+console.log(cola.recorrerCola());
    
 ```
 
