@@ -82,4 +82,13 @@ Lo opuesto a un árbol degenerado sería un árbol balanceado, donde el árbol t
 [Código de un árbol binario en javascript ](https://gist.github.com/rodrwan/b1d01a8f2a6eb3808824eabae6ff5226 "Arbol binario en js")
 
 
-[Árboles](https://medium.com/laboratoria-how-to/%C3%A1rboles-trees-51783ba4ebe5 "Arbol  en js")
+[Árboles en js](https://medium.com/laboratoria-how-to/%C3%A1rboles-trees-51783ba4ebe5"Arbol  en js")
+[Explicación de arbol en Java Script]( "Explicación de estructura de árbol en JavaScript")
+
+[Explicación de los arboles en Javascript](https://www.youtube.com/watch?v=Qexq1k8LB6k&index=11&list=PLTd5ehIj0goMTSK7RRAPBF4wP-Nj5DRvT"Explicación de los arboles en Javascript")
+
+[Explicación de arbol binario parte 1]( https://www.youtube.com/watch?v=OVCNzj5BMcs&index=12&list=PLTd5ehIj0goMTSK7RRAPBF4wP-Nj5DRvT "Explicación de un árbol binario parte 1")
+
+[Explicación de arbol binario parte 2]( https://www.youtube.com/watch?v=G1VS5FbtMS4&index=13&list=PLTd5ehIj0goMTSK7RRAPBF4wP-Nj5DRvT "Explicación de un árbol binario parte 2")
+
+[Explicación de arbol binario parte 3]( https://www.youtube.com/watch?v=i77HKoFWyyI&list=PLTd5ehIj0goMTSK7RRAPBF4wP-Nj5DRvT&index=16 "Explicación de un árbol binario parte 3")
