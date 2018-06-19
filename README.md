@@ -34,4 +34,6 @@
 
 ### Teoría
 
+Un arreglo es un conjunto de datos o una estructura de datos no homogéneos que se encuentran ubicados en forma consecutiva en la memoria RAM.
+
 ### Código
