@@ -163,28 +163,43 @@ En el caso del grafo de arriba, que pongamos (A,B) o (B,A) es indiferente, ya qu
 
 ### Código
 class Grafo {
-	constructor(){
-		this.nodo1 = [2,4];
-	    this.nodo2 = [3,4,1];
-	    this.nodo3 = [2,4];
-	    this.nodo4 = [1,2,3];
-	    this.nodos = [this.nodo1, this.nodo2, this.nodo3, this.nodo4];
-	}
-	getNodos(){
-      return this.nodos
-    }
-    getNodo(posicion){
-      return this.nodos[posicion]
-    }
- }
+
+constructor(){
+
+this.nodo1 = [2,4];
+
+this.nodo2 = [3,4,1];
+
+this.nodo3 = [2,4];
+
+this.nodo4 = [1,2,3];
+
+this.nodos = [this.nodo1, this.nodo2, this.nodo3, this.nodo4];
+}
+
+getNodos(){
+
+return this.nodos
+}
+
+getNodo(posicion){
+
+return this.nodos[posicion]
+}
+
+}
 
 
 var grafo  = new Grafo();
 
 // muestra todos los nodos
+
 document.write(grafo.getNodos());
+
 document.write("<br/>");
+
 // muestra el nodo 3
+
 document.write(grafo.getNodo(3));
 
 ## Arreglo
