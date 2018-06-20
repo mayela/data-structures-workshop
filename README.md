@@ -20,7 +20,7 @@ class Cola
     {
         this.items = [];
     }
-                 
+
 // Funcion añadir
 añadir(element)
 {    
@@ -32,7 +32,7 @@ eliminar()
 {
     // remueve elemnto de la cola
     // si la cola esta vacia retorna sobreflujo
-   
+
     if(this.estavacio())
         return "Sobreflujo";
     return this.items.shift();
@@ -41,7 +41,7 @@ eliminar()
 frente()
 {
     //muestra el elemento que se encuentra al inicio sin removerlo
- 
+
     if(this.estavacio())
         return "Sin elementos en la cola";
         //el indice 0 que es el inicial
@@ -65,14 +65,14 @@ recorrerCola()
 }
 // creamos un objeto de la clase Cola
 var cola = new Cola();
-             
- 
+
+
 //Si no hay nada en la cola muestra sobreflujo
 console.log(cola.eliminar());
- 
+
 //comprobamos que la cola este vacia
 console.log(cola.estavacio());
- 
+
 //Añadimos elementos a la Cola
 //
 cola.añadir(10);
@@ -81,25 +81,25 @@ cola.añadir(30);
 cola.añadir(40);
 cola.añadir(50);
 
- 
+
 // muestra 10
 console.log(cola.frente());
- 
+
 // elimina el diez
 // la cola ahora contiene [20, 30, 40, 50]
 console.log(cola.eliminar());
- 
+
 // muestra 20
 console.log(cola.frente());
- 
+
 // elimina 20
 // la cola ahora contiene [30, 40, 50]
 console.log(cola.eliminar());
- 
+
 // imprime los elementos de la cola
 //  [30, 40, 50]
 console.log(cola.recorrerCola());
-   
+
 ```
 
 ## Lista ligada
@@ -112,7 +112,7 @@ console.log(cola.recorrerCola());
 
 Los árboles (trees) son una estructura de datos muy común, que se define de forma recursiva como una colección de nodos, empezando por un nodo raíz, donde cada nodo es una estructura de datos que contiene un valor, y opcionalmente una lista de referencias a otros nodos (sus hijos), con la limitación de que ninguna referencia esté duplicada, y que ninguna apunte al nodo raíz.
 
-  ## Termimología de un arbol 
+  ## Termimología de un arbol
 
    ### Nodo
 El “nodo” es la estructura básica que usamos para construir un “árbol”. Todos los elementos de un árbol son nodos. A su vez, cada nodo es un sub-árbol. Los nodos se caracterizan por tener un valor, y referencias a otros nodos.
@@ -137,7 +137,7 @@ El orden o grado de un árbol determina cuántos hijos puede tener un nodo. Por 
 
 ![Terminos de arboles](images/arbol.png "Terminos de árbol de javascript")
 
-### Tipos de arboles 
+### Tipos de arboles
 
    ### Árbol completo
 Un árbol completo es aquel en el que todos los nodos tienen o ningún hijo o el número máximo de hijos.
@@ -155,8 +155,37 @@ Lo opuesto a un árbol degenerado sería un árbol balanceado, donde el árbol t
 ## Grafo
 
 ### Teoría
+Un grafo (o graph, en inglés) es un conjunto de vértices y un conjunto de aristas. Si lo vemos gráficamente tendremos:
+![grafo](images/grafo.png "ejemplo de un grafo")
+Notarás que cada vértice esta nombrado en este caso. Para nuestro ejemplo los vértices son A, B, C y D. Cuando queremos definir una arista la podemos determinar como (Vértice, Vértice), que reprensenta los vértices que conecta dicha arista. Entonces las aristas del grafo anterior estarán representados cómo:
+![grafo](images/grafo2.png "ejemplo de un grafo")
+En el caso del grafo de arriba, que pongamos (A,B) o (B,A) es indiferente, ya que el orden no representa nada…aún. En este caso, en donde el orden de los vértices no define nada de información, pero si nos dice qué vértices estan conectados, llamamos un Grafo No Ordenado o solo grafo. Hay otros grafos que nos dará más información.
 
 ### Código
+class Grafo {
+	constructor(){
+		this.nodo1 = [2,4];
+	    this.nodo2 = [3,4,1];
+	    this.nodo3 = [2,4];
+	    this.nodo4 = [1,2,3];
+	    this.nodos = [this.nodo1, this.nodo2, this.nodo3, this.nodo4];
+	}
+	getNodos(){
+      return this.nodos
+    }
+    getNodo(posicion){
+      return this.nodos[posicion]
+    }
+ }
+
+
+var grafo  = new Grafo();
+
+// muestra todos los nodos
+document.write(grafo.getNodos());
+document.write("<br/>");
+// muestra el nodo 3
+document.write(grafo.getNodo(3));
 
 ## Arreglo
 
@@ -169,7 +198,7 @@ Un arreglo es un conjunto de datos o una estructura de datos no homogéneos que 
 
 
 
-## Referencias 
+## Referencias
 
 [Código de un árbol binario en javascript ](https://gist.github.com/rodrwan/b1d01a8f2a6eb3808824eabae6ff5226 "Arbol binario en js")
 
