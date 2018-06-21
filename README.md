@@ -162,6 +162,7 @@ Notarás que cada vértice esta nombrado en este caso. Para nuestro ejemplo los 
 En el caso del grafo de arriba, que pongamos (A,B) o (B,A) es indiferente, ya que el orden no representa nada…aún. En este caso, en donde el orden de los vértices no define nada de información, pero si nos dice qué vértices estan conectados, llamamos un Grafo No Ordenado o solo grafo. Hay otros grafos que nos dará más información.
 
 ### Código
+```javascript
 class Grafo {
 
 	constructor(){
@@ -203,7 +204,8 @@ document.write("<br/>");
 
 // muestra el nodo 3
 
-document.write(grafo.getNodo(3));;
+document.write(grafo.getNodo(3));
+```
 
 ## Arreglo
 
