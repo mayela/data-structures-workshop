@@ -225,6 +225,14 @@ class Tree {
     }
   }
   
+        var t = new Tree()
+      var arr = [5,2,3,-4,12,9,21,19,25]
+
+      for (var i = 0; i < arr.length; i++) {
+        t.addRecursive(arr[i])
+      }
+      t.print()
+
 ```
 ## Grafo
 
