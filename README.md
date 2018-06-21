@@ -212,6 +212,21 @@ document.write(grafo.getNodo(3));;
 Un arreglo es un conjunto de datos o una estructura de datos no homogéneos que se encuentran ubicados en forma consecutiva en la memoria RAM.
 
 ### Código
+```javascript
+class Array {
+    constructor() {
+        this.item = [];
+    }
+    //Agregar elemento:
+    add(element) {
+        this.item.push(element)
+    }
+    //Eliminar elemento
+    remove(element) {
+        this.item.shift(element);
+    }
+};
+```
 
 
 
