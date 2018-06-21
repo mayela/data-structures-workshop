@@ -10,6 +10,12 @@
 
 ### Teoría
 
+Se caracteriza por ser una secuencia de elementos en la que la operación de inserción push se realiza por un extremo y la operación de extracción shift por el otro. También se le llama estructura FIFO ( First In First Out), Esto es el ultimo elemento en entrar es el primero en salir
+
+Las colas se utilizan en sistemas informáticos, transportes y operaciones de investigación, etc. , donde los elementos son tomados como datos que se almacenan y se guardan mediante colas para su posterior procesamiento.
+
+Este tipo de estructura de datos abstracta se implementa en lenguajes orientados a objetos mediante clases, en forma de listas enlazadas.
+
 ### Código
 ```javascript
     // Clase cola
@@ -237,3 +243,5 @@ class Array {
 
 
 [Árboles](https://medium.com/laboratoria-how-to/%C3%A1rboles-trees-51783ba4ebe5 "Arbol  en js")
+
+[Pagina para consultar codigo ](https://www.geeksforgeeks.org/ "Pagina de apoyo")
