@@ -157,19 +157,19 @@ Lo opuesto a un árbol degenerado sería un árbol balanceado, donde el árbol t
 ![Tipos de arboles](images/estructura-de-datos.jpg "Tipos de árbol de javascript")
 
 ### Código
-  ```
+  ```javascript
  class Node {
   constructor (value) {
     this.value = value
     this.right = null
     this.left = null
-  }
+  } //creamos  un nodo vacio 
 }
 
 class Tree {
   constructor () {
     this.root = null
-  }
+  }  
 
   isEmpty () {
     return this.root === null
