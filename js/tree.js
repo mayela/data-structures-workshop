@@ -13,7 +13,7 @@ class Tree {
 
   isEmpty () {
     return this.root === null
-  }
+  } // Si el arbol esta vacio regresar nulo 
 
   add (value) {
     // arbol no tiene elementos
@@ -48,18 +48,18 @@ class Tree {
     if (!node) {
       this.root = new Node(value)
       return
-    }
+    } //Crea un nuevo9 nodo con el valor 
 
     if (value < node.value) {
       if (node.left) {
         return this.addRecursive(value, node.left)
-      }
+      } // si el valor del nodo es menor al valor izquierdo de referencia, entonces agregamos el nodo en el lado izquierdo 
       node.left = new Node(value)
       return
-    } else { // vamos hacia la derecha
+    } else { // en caso contrario  vamos hacia la derecha y agregamos el nodo 
       if (node.right) {
         return this.addRecursive(value, node.right)
-      }
+      } 
       node.right = new Node(value)
       return
     }
