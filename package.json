@@ -1,0 +1,23 @@
+{
+  "name": "data-structures-workshop",
+  "version": "1.0.0",
+  "description": "Data strucutres with tests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mayela/data-structures-workshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mayela/data-structures-workshop/issues"
+  },
+  "homepage": "https://github.com/mayela/data-structures-workshop#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}
