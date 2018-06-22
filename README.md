@@ -157,7 +157,83 @@ Lo opuesto a un árbol degenerado sería un árbol balanceado, donde el árbol t
 ![Tipos de arboles](images/estructura-de-datos.jpg "Tipos de árbol de javascript")
 
 ### Código
+  ```javascript
+ class Node {
+  constructor (value) {
+    this.value = value
+    this.right = null
+    this.left = null
+  } //creamos  un nodo vacio 
+}
 
+class Tree {
+  constructor () {
+    this.root = null
+  }  
+
+  isEmpty () {
+    return this.root === null
+  } // Si el arbol esta vacio regresar nulo 
+
+  add (value) {
+    // arbol no tiene elementos
+    if (this.isEmpty()) {
+      this.root = new Node(value)
+      return
+    }
+
+    var aux = this.root
+
+    while (aux) {
+      // vamos hacia la izquierda
+      if (value < aux.value) {
+        if (aux.left) {
+          aux = aux.left
+        } else {
+          aux.left = new Node(value)
+          return
+        }
+      } else { // vamos hacia la derecha
+        if (aux.right) {
+          aux = aux.right
+        } else {
+          aux.right = new Node(value)
+          return
+        }
+      }
+    }
+  }
+
+   addRecursive (value, node = this.root) {
+    if (!node) {
+      this.root = new Node(value)
+      return
+    } //Crea un nuevo9 nodo con el valor 
+
+    if (value < node.value) {
+      if (node.left) {
+        return this.addRecursive(value, node.left)
+      } // si el valor del nodo es menor al valor izquierdo de referencia, entonces agregamos el nodo en el lado izquierdo 
+      node.left = new Node(value)
+      return
+    } else { // en caso contrario  vamos hacia la derecha y agregamos el nodo 
+      if (node.right) {
+        return this.addRecursive(value, node.right)
+      } 
+      node.right = new Node(value)
+      return
+    }
+  }
+  
+        var t = new Tree()
+      var arr = [5,2,3,-4,12,9,21,19,25]
+
+      for (var i = 0; i < arr.length; i++) {
+        t.addRecursive(arr[i])
+      }
+      t.print()
+
+```
 ## Grafo
 
 ### Teoría
@@ -241,8 +317,22 @@ class Array {
 
 ## Referencias
 
-[Código de un árbol binario en javascript ](https://gist.github.com/rodrwan/b1d01a8f2a6eb3808824eabae6ff5226 "Arbol binario en js")
+[Código de un árbol binario en javascript](https://gist.github.com/rodrwan/b1d01a8f2a6eb3808824eabae6ff5226 "Arbol binario en js")
 
+
+[Árboles en js](https://medium.com/laboratoria-how-to/%C3%A1rboles-trees-51783ba4ebe5 "Arbol en js")
+
+[Explicación de arbol en Java Script]( "Explicación de estructura de árbol en JavaScript")
+
+[Explicación de los arboles en Javascript](https://www.youtube.com/watch?v=Qexq1k8LB6k&index=11&list=PLTd5ehIj0goMTSK7RRAPBF4wP-Nj5DRvT"Explicación de los arboles en Javascript")
+
+[Explicación de arbol binario parte 1]( https://www.youtube.com/watch?v=OVCNzj5BMcs&index=12&list=PLTd5ehIj0goMTSK7RRAPBF4wP-Nj5DRvT "Explicación de un árbol binario parte 1")
+
+[Explicación de arbol binario parte 2]( https://www.youtube.com/watch?v=G1VS5FbtMS4&index=13&list=PLTd5ehIj0goMTSK7RRAPBF4wP-Nj5DRvT "Explicación de un árbol binario parte 2")
+
+[Explicación de arbol binario parte 3]( https://www.youtube.com/watch?v=i77HKoFWyyI&list=PLTd5ehIj0goMTSK7RRAPBF4wP-Nj5DRvT&index=16 "Explicación de un árbol binario parte 3")
+
+[Explicación de un arbol binario](http://www.utm.mx/~rruiz/cursos/ED/material/ABB.pdf "Arboles binarios ")
 
 [Árboles](https://medium.com/laboratoria-how-to/%C3%A1rboles-trees-51783ba4ebe5 "Arbol  en js")
 
