@@ -4,8 +4,70 @@
 
 ### Teoría
 
+Las pilas o "stacks" son una estructura de datos donde tenemos una coleccion de elementos y solo podemos hacer dos cosas:
+
+1.-Añadir un elemento al final de la pila.
+2.-Sacar el ultimo elemento de la pila.
+
+Una manera comun de visualizar una pila es imaginando una torre de hotcakes, donde una vez que ponemos un hotcake encima de otro, no podemos sacar el anterior hasta que se haya sacado todos los que estan encima.
+
+A pesdar de su simplicidad, las pilas son estructuras comunes en ciertas areas de la computacion, en especial para implementar o simular evaluacion de expresiones, recursión,scope,etc..
+
+Las pilas son estructuras de tipo "LIFO" (Last in First Out), lo cual quiere decir que el ultimo elemento añadido es siempre el primero en salir.
+
 ### Código
 
+```javascript
+class Stack {
+
+    constructor()
+    {
+        this.item = [];
+        this.top = 0;
+    }
+ 
+    add(element)
+    {
+        this.item.push(element)[this.top ++];
+    }
+
+    estract()
+    {
+        this.item.pop();
+    }
+    
+    getTopElement()
+    {
+        return this.item[this.top-1];
+    }
+    
+    size()
+    {
+        return this.item.length;
+    }
+    
+    clear()
+    {
+      return this.item[this.top === 0]
+    }
+    
+    
+}
+
+var frutero = new Stack();
+
+frutero.add("banana");
+frutero.add("mango");
+frutero.add("manzana");
+frutero.add("pera");
+frutero.add("guayaba");
+
+document.write(frutero.size());
+
+document.write(frutero.getTopElement());
+
+
+```
 ## Cola
 
 ### Teoría
