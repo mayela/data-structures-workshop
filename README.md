@@ -335,3 +335,4 @@ class Array {
 [Árboles](https://medium.com/laboratoria-how-to/%C3%A1rboles-trees-51783ba4ebe5 "Arbol  en js")
 
 [Pagina para consultar codigo ](https://www.geeksforgeeks.org/ "Pagina de apoyo")
+* https://www.paradigmadigital.com/dev/testeando-javascript-mocha-chai/
