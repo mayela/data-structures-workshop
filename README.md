@@ -336,6 +336,7 @@ class Grafo {
 
  }
 
+//objeto
 
 var grafo  = new Grafo();
 
